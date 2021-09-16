@@ -1,0 +1,451 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     /* font-family: Helvetica, Arial, sans-serif; */
+     font-family: 'Oswald', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+     background: rgb(105,118,136);
+     /* border: solid green; */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+nav{
+     width: 15%;
+     display: flex;
+     flex-direction: row;
+}
+
+nav a{
+     align-self: center;
+}
+
+header li{
+     list-style: none;
+}
+
+header a{
+     font-size: 17px;
+}
+
+header img{
+     width: 40%;
+     
+}
+
+.leftNav{
+     width: 100%;
+     /* border: solid black; */
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
+.leftNav li{
+     margin-left: 5%;
+}
+
+p {
+     font-size: 21px;
+}
+
+h2 {
+     font-size: 35px;
+}
+
+h3 {
+     font-size: 25px;
+}
+
+.firstSection, .secondSection, .thirdSection, .fourthSection{
+     text-align: center;
+}
+
+.firstSection{
+     background: rgb(105,118,136);
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+}
+
+.firstSection h1{ 
+     font-size: 6rem;
+     height: ;
+}
+
+.firstSection p{
+     font-size: 22px;
+     padding-left: 25%;
+     padding-right: 25%;
+}
+
+.firstSection a{
+     text-decoration: none;
+     font-size: 25px;
+     margin-bottom: 5%;
+}
+
+.secondSection{
+     width: 100%;
+     border: solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+}
+.secondSection h2{
+     margin-top: 5%;
+     height: 1vh;
+}
+.secondSection p{
+     padding-left: 31%;
+     padding-right: 30%;
+     margin-bottom: 5%;
+}
+
+.thirdSection{
+     width: 100%;
+     border: solid black;
+     display: flex;
+     flex-direction: row;
+     
+}
+
+.leftSection, .rightSection{
+     width: 50%;
+     border: solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+}
+
+.lgrayBox, .rgrayBox{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.lgrayBox div{
+     width: 50%;
+     height: 200px;
+     background: rgb(105,118,136);
+     margin-top: 100px;
+}
+
+.rgrayBox div{
+     width: 50%;
+     height: 200px;
+     background: rgb(105,118,136);
+     margin-top: 100px;
+}
+
+.leftSection .btn{
+     margin-bottom: 100px;
+}
+
+.leftSection p{
+     padding-left: 20%;
+     padding-right: 20%;
+}
+
+.rightSection p{
+     padding-left: 20%;
+     padding-right: 20%;
+}
+
+.rightSection .btn{
+     margin-bottom: 100px;
+}
+
+.thirdSection a{
+     font-size: 18px;
+}
+
+.thirdSection{
+     background: rgb(219,223,226);
+}
+
+.fourthSection{
+     width: 100%;
+     border: solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+}
+
+.fourthSection p{
+     padding-left: 31%;
+     padding-right: 30%;
+}
+
+.fourthSection .btn{
+     margin-bottom: 5%;
+}
+
+footer{
+     width: 100%;
+     border: solid black;
+     background: rgb(24, 31, 41);
+     color: white;
+     display: flex;
+     
+}
+
+.leftFooter{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     width: 50%;
+}
+
+.leftFooter i{
+     font-size: 30px;
+}
+
+.smlinks{
+     width: 20%;
+     /* border: solid blue; */
+}
+
+.socialmedia{
+     display: flex;
+     justify-content: space-between;
+}
+
+.socialmedia a{
+     width: 20%;
+}
+
+.sitemap{
+     font-size: 12px;
+     line-height: 0.5;;
+}
+
+.rightFooter{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     width: 50%;
+     /* border: solid red; */
+}
+
+.rightFooter p{
+     font-size: 12px;
+     line-height: 0.5;
+}
+
+.copyright{
+     background: rgb(24, 31, 41);
+     border-top: 2px solid white;
+     display: flex;
+     flex-direction: row;
+}
+
+.copyright ul{
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.copyright h4{
+     width: 100%;
+     color: white;
+}
+
+.copyright a{
+     width: 10%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+/* OTHER STYLES */
+
+.hide{
+     display: none;
+}
+
+.whiteText{
+     color: white;
+}
+
+.grayText{
+     color: gray;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.btnwidth{
+     width: 30%;
+}
+
+.btnwidthtwo{
+     width: 15%;
+}
+
+.btn{
+     border-radius: 5px;
+     color: black;
+     cursor: pointer;
+     display: inline-block;
+     font-weight: 400;
+     letter-spacing: .5px;
+     margin: 0;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+
+.btn-alt{
+     border: 1px solid white;
+     padding: 5px 15px;
+     background: white;
+     color: rgb(105,118,136);
+     
+   }
+
+.btn-alt1, .btn-alt2{
+     border: 1px solid black;
+     padding: 20px 60px;
+     /* margin-top: 20px; */
+   }
+
+.btn-alt1{
+     background: rgb(220,220,220);
+   }
+
+.btn-alt2{
+     background: white;
+   }
+
+.btn-alt:hover{
+     background: rgb(105,118,136);
+     color: #fff;
+   }
+
+.btn-alt1:hover{
+     background: #fff;
+     color: #648880;
+   }
+
+.btn-alt2:hover{
+     background: rgb(220,220,220);
+     color: #648880;
+}
+
+
+   /* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+     .displaynone{
+          display: none;
+     }
+     header a{
+          width: 100%;
+          text-align: center;
+     }
+     .thirdSection{
+          display: flex;
+          flex-direction: column;
+     }
+     .leftSection, .rightSection{
+          width: 100%;
+     }
+     .leftFooter, .socialmedia, .sitemap{
+          display: flex;
+          flex-direction: row;
+     }
+     .rightFooter, .copyright{
+          display: none;
+     }
+     .leftFooter{
+          width: 100%;
+     }
+     .smlinks{
+          width: 100%;
+     }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+     .displaynone{
+          display: none;
+     }
+     
+     .thirdSection{
+          display: flex;
+          flex-direction: column;
+     }
+     .leftSection, .rightSection{
+          float: left;
+          width: 100%;
+     }
+     .sitemap{
+          float: left;
+          width: 80%;
+          
+     }
+     .leftFooter{
+          width: 100%;
+     }
+     .smlinks{
+          width: 100%;
+     }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+     .copy{
+          display: none;
+     }
+}
